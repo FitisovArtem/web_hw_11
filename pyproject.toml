@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "web-hw-11"
+version = "0.1.0"
+description = ""
+authors = ["FitisovArtem <109963097+FitisovArtem@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standart"], version = "^0.24.0.post1"}
+sqlalchemy = {extras = ["postgresql-asyncpg"], version = "^2.0.23"}
+pydantic = {extras = ["email"], version = "^2.5.2"}
+asyncpg = "^0.29.0"
+alembic = "^1.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
